@@ -11,3 +11,6 @@ ui_*.h
 *.exe
 *.dll
 .qmake.stash
+
+# 本地预览产物
+_tools/report_preview.pdf
