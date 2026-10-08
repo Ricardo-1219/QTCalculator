@@ -1,0 +1,13 @@
+# Qt Creator / qmake 生成文件
+*.user
+*.user.*
+Makefile*
+build*/
+*.o
+*.obj
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+*.exe
+*.dll
+.qmake.stash
