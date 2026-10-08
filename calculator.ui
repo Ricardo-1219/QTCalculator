@@ -7,13 +7,230 @@
     <x>0</x>
     <y>0</y>
     <width>560</width>
-    <height>640</height>
+    <height>650</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>460</width>
+    <height>560</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>计算器</string>
   </property>
-  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="displayPanel" native="true">
+      <layout class="QVBoxLayout" name="displayLayout">
+       <property name="spacing">
+        <number>4</number>
+       </property>
+       <property name="leftMargin">
+        <number>10</number>
+       </property>
+       <property name="topMargin">
+        <number>10</number>
+       </property>
+       <property name="rightMargin">
+        <number>10</number>
+       </property>
+       <property name="bottomMargin">
+        <number>10</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="labExpression">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>34</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::FocusPolicy::NoFocus</enum>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignBottom|Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="editDisplay">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>28</pointsize>
+          </font>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::FocusPolicy::NoFocus</enum>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignBottom|Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="buttonPanel" native="true">
+      <layout class="QGridLayout" name="gridLayout">
+       <property name="leftMargin">
+        <number>6</number>
+       </property>
+       <property name="topMargin">
+        <number>6</number>
+       </property>
+       <property name="rightMargin">
+        <number>6</number>
+       </property>
+       <property name="bottomMargin">
+        <number>6</number>
+       </property>
+       <property name="horizontalSpacing">
+        <number>6</number>
+       </property>
+       <property name="verticalSpacing">
+        <number>6</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QPushButton" name="btnPercent">
+         <property name="text"><string>%</string></property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="btnClearEntry">
+         <property name="text"><string>CE</string></property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="btnClear">
+         <property name="text"><string>C</string></property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QPushButton" name="btnBackspace">
+         <property name="text"><string>⌫</string></property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="btnReciprocal">
+         <property name="text"><string>1/x</string></property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="btnSquare">
+         <property name="text"><string>x²</string></property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="btnSqrt">
+         <property name="text"><string>√</string></property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QPushButton" name="btnDivide">
+         <property name="text"><string>÷</string></property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QPushButton" name="btn7"><property name="text"><string>7</string></property></widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="btn8"><property name="text"><string>8</string></property></widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QPushButton" name="btn9"><property name="text"><string>9</string></property></widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QPushButton" name="btnMultiply">
+         <property name="text"><string>×</string></property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QPushButton" name="btn4"><property name="text"><string>4</string></property></widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QPushButton" name="btn5"><property name="text"><string>5</string></property></widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QPushButton" name="btn6"><property name="text"><string>6</string></property></widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="QPushButton" name="btnMinus">
+         <property name="text"><string>−</string></property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QPushButton" name="btn1"><property name="text"><string>1</string></property></widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QPushButton" name="btn2"><property name="text"><string>2</string></property></widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QPushButton" name="btn3"><property name="text"><string>3</string></property></widget>
+       </item>
+       <item row="4" column="3">
+        <widget class="QPushButton" name="btnPlus">
+         <property name="text"><string>+</string></property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QPushButton" name="btnSign">
+         <property name="text"><string>±</string></property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QPushButton" name="btn0"><property name="text"><string>0</string></property></widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QPushButton" name="btnDot">
+         <property name="text"><string>.</string></property>
+        </widget>
+       </item>
+       <item row="5" column="3">
+        <widget class="QPushButton" name="btnEquals">
+         <property name="text"><string>=</string></property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
  </widget>
  <resources/>
  <connections/>

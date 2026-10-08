@@ -1,1 +1,76 @@
-/* 样式表在后续步骤中完善 */
+/* ============================================================
+   计算器界面样式表（参考 Windows 计算器：白底 + 浅灰分隔 + 蓝色等号）
+   ============================================================ */
+
+QMainWindow {
+    background-color: #ffffff;
+}
+
+QWidget#centralWidget {
+    background-color: #ffffff;
+}
+
+/* ---------- 显示区 ---------- */
+QWidget#displayPanel {
+    background-color: #ffffff;
+}
+
+QLabel#labExpression {
+    color: #8a8a8a;
+    font-size: 13pt;
+    padding-right: 8px;
+}
+
+QLineEdit#editDisplay {
+    border: none;
+    background: transparent;
+    color: #101010;
+    font-size: 30pt;
+    padding-right: 8px;
+}
+
+/* ---------- 按键区 ---------- */
+QWidget#buttonPanel QPushButton {
+    border: 1px solid #e7e7e7;
+    border-radius: 6px;
+    background-color: #fbfbfb;
+    color: #101010;
+    font-size: 15pt;
+    min-height: 58px;
+}
+
+QWidget#buttonPanel QPushButton:hover {
+    background-color: #f1f1f1;
+}
+
+QWidget#buttonPanel QPushButton:pressed {
+    background-color: #e3e3e3;
+}
+
+/* 功能键（浅灰） */
+QWidget#buttonPanel QPushButton#btnPercent,
+QWidget#buttonPanel QPushButton#btnClearEntry,
+QWidget#buttonPanel QPushButton#btnClear,
+QWidget#buttonPanel QPushButton#btnBackspace,
+QWidget#buttonPanel QPushButton#btnReciprocal,
+QWidget#buttonPanel QPushButton#btnSquare,
+QWidget#buttonPanel QPushButton#btnSqrt,
+QWidget#buttonPanel QPushButton#btnSign {
+    background-color: #f3f3f3;
+}
+
+/* 等号（蓝色高亮） */
+QWidget#buttonPanel QPushButton#btnEquals {
+    background-color: #3b8ef3;
+    border: 1px solid #3b8ef3;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+QWidget#buttonPanel QPushButton#btnEquals:hover {
+    background-color: #2f80e0;
+}
+
+QWidget#buttonPanel QPushButton#btnEquals:pressed {
+    background-color: #2a70c7;
+}
